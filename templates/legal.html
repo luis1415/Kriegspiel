@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block title %}Legal – Syzygy endgame tablebases{% endblock %}
+
+{% block apidoc_query %}?fen=6N1/5KR1/2n5/8/8/8/2n5/1k6%20w%20-%20-%200%201{% endblock %}
+
+{% block leftside %}
+  <h1>Legal</h1>
+
+  <nav>
+    <div class="reload"><a class="btn btn-default" href="/">Back to board</a></div>
+  </nav>
+{% endblock %}
+
+{% block rightside %}
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <p>
+      <a href="mailto:niklas.fiekas@backscattering.de">niklas.fiekas@backscattering.de</a>
+      (<a href="https://pgp.mit.edu/pks/lookup?op=get&amp;search=0x2ECA66C65B255138">OpenPGP</a>)
+    </p>
+  </section>
+
+  <section id="imprint">
+    <h2>Imprint</h2>
+
+    <p>Niklas Fiekas
+      <br>Reichenberger Straße 3
+      <br>38678 Clausthal-Zellerfeld
+      <br>Germany
+    </p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy policy / <span lang="de">Datenschutzerklärung</span></h2>
+
+    <em>Informal: There are server logs.</em>
+
+    <div lang="de">
+      <h3>Zugriffsdaten und Server-Logfiles</h3>
+      <p>Der Anbieter (beziehungsweise sein Webspace-Provider) erhebt Daten über jeden Zugriff auf das Angebot (so genannte Serverlogfiles). Zu den Zugriffsdaten gehören:</p>
+      <p>Name der abgerufenen Webseite, Datei, Datum und Uhrzeit des Abrufs, übertragene Datenmenge, Meldung über erfolgreichen Abruf, Browsertyp nebst Version, das Betriebssystem des Nutzers, Referrer URL (die zuvor besuchte Seite), IP-Adresse und der anfragende Provider.<p>
+      <p>Der Anbieter verwendet die Protokolldaten nur für statistische Auswertungen zum Zweck des Betriebs, der Sicherheit und der Optimierung des Angebotes. Der Anbieterbehält sich jedoch vor, die Protokolldaten nachträglich zu überprüfen, wenn aufgrund konkreter Anhaltspunkte der berechtigte Verdacht einer rechtswidrigen Nutzung besteht.</p>
+
+      <h3>Kontaktaufnahme</h3>
+      <p>Bei der Kontaktaufnahme mit dem Anbieter (zum Beispiel per E-Mail) werden die Angaben des Nutzers zwecks Bearbeitung der Anfrage sowie für den Fall, dass Anschlussfragen entstehen, gespeichert.</p>
+    </div>
+  </section>
+
+  <section id="thanks">
+    <h2>Software licenses</h2>
+
+    <p>The <a href="https://github.com/niklasf/syzygy-tables.info">code for the website itself</a> is <a href="https://github.com/niklasf/syzygy-tables.info/blob/master/LICENSE">licensed under the GPLv3</a>. It also uses the following software:</p>
+
+    <ul>
+      <li><a href="https://github.com/niklasf/python-chess">python-chess</a> (<a href="https://github.com/niklasf/python-chess/blob/master/LICENSE">GPLv3</a>)</li>
+      <li><a href="http://chessboardjs.com/">chessboard.js</a> (<a href="https://github.com/oakmac/chessboardjs/blob/master/LICENSE">MIT</a>)</li>
+      <li><a href="https://github.com/jhlywa/chess.js">chess.js</a> (<a href="https://github.com/jhlywa/chess.js/blob/master/LICENSE">MIT</a>)</li>
+      <li><a href="https://github.com/michiguel/Gaviota-Tablebases">Gaviota tablebases</a> (<a href="https://github.com/michiguel/Gaviota-Tablebases/blob/master/license.txt">MIT</a>)</li>
+      <li><a href="http://aiohttp.readthedocs.org/en/stable/">aiohttp</a> (<a href="https://github.com/KeepSafe/aiohttp/blob/master/LICENSE.txt">Apache 2</a>)</li>
+      <li><a href="http://jinja.pocoo.org/">Jinja</a> (<a href="https://github.com/mitsuhiko/jinja2/blob/master/LICENSE">BSD</a>)</li>
+      <li><a href="https://htmlmin.readthedocs.org/en/latest/">htmlmin</a> (<a href="https://github.com/mankyd/htmlmin/blob/master/LICENSE">BSD</a>)</li>
+      <li><a href="http://getbootstrap.com/">Bootstrap</a> (<a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">MIT</a>)</li>
+      <li><a href="https://jquery.com/">jQuery</a> (<a href="https://github.com/jquery/jquery/blob/master/LICENSE.txt">MIT</a>)</li>
+    </ul>
+  </section>
+{% endblock %}

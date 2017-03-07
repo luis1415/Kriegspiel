@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/css/style.min.css">
+    {% block head %}{% endblock %}
+    <title>{%block title %}Syzygy endgame tablebases{%endblock%}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="keywords" content="Syzygy,chess,endgame,tablebase">
+    <meta name="author" content="Niklas Fiekas">
+    <link rel="author" title="Legal" href="/legal">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="sitemap" href="/sitemap.txt" type="text/plain">
+  </head>
+  <body>
+    {% if development %}
+      <div id="development">Careful, this is an unreliable development version.</div>
+    {% endif %}
+
+    <div class="content">
+      <div class="left-side">
+        <div class="inner">
+          {%block leftside %}{%endblock%}
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="inner">
+          {%block rightside %}{%endblock%}
+        </div>
+      </div>
+      <footer>
+        <div class="inner">
+          {%block footer %}
+            <p>Powered by Ronald de Man's <a href="https://github.com/syzygy1/tb">Syzygy endgame tablebases</a>, <a href="https://github.com/niklasf/python-chess">python-chess</a> for probing and <a href="http://chessboardjs.com">chessboard.js</a> and <a href="https://github.com/jhlywa/chess.js">chess.js</a> for the client.</p>
+            <p><a href="/legal">Legal</a>. <a id="apidoc" href="/apidoc{% block apidoc_query %}{% endblock %}">Public API</a>. <a href="https://github.com/niklasf/syzygy-tables.info">GitHub</a>.</p>
+          {%endblock%}
+        </div>
+      </footer>
+    </div>
+
+    {% block forkme %}
+      <a class="fork-me" href="https://github.com/niklasf/syzygy-tables.info"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 2;" src="/static/fork-me.png" alt="Fork me on GitHub" width="149" height="149"></a>
+    {% endblock %}
+  </body>
+</html>
